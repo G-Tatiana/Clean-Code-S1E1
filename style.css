@@ -138,7 +138,8 @@ input[type="text"]:focus {
   width: 226px;
 }
 
-li >    input[type="text"] {
+.todo__input,
+.completed__input {
   width: 226px;
 }
 
