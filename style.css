@@ -37,7 +37,7 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add__task {
   display: flex;
 }
 
@@ -70,7 +70,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for="new-task"] {
+.add__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
