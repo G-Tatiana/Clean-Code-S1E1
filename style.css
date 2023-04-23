@@ -69,8 +69,8 @@ li, h3 {
 }
 
 /* Heading */
-h3,
-.add__title {
+.add__title,
+.todo__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
