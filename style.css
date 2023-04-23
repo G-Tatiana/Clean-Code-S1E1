@@ -120,7 +120,8 @@ input[type="text"]:focus {
   align-items: center;
 }
 
-li > * {
+.todo__item,
+.completed__item > * {
   vertical-align: middle;
 }
 
