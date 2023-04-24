@@ -160,11 +160,11 @@ li, h3 {
   display: none;
 }
 
-.editMode .row__input {
+.list__edit-mode .row__input {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .row__label {
+.list__edit-mode .row__label {
   display: none;
 }
