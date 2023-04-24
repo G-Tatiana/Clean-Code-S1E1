@@ -16,28 +16,28 @@
 
         <section class="add" id="topSectionForAddingElementToList">
           <label class="add__title" for="new-task">Add Item</label>
-          <div class="add__task">
-              <input id="new-task" class="add__input task" type="text">
+          <div class="add__task row">
+              <input id="new-task" class="row__input task" type="text">
               <button class="button add__button">Add</button>
           </div>
         </section>
 
         <section class="todo">
           <h3 class="todo__title">Todo</h3>
-          <ul class="todo__list" id="incompleteTasks">
-              <li class="todo__item">
-                <input class="todo__checkbox" type="checkbox">
-                <label class="todo__label task">Pay Bills</label>
-                <input type="text" class="todo__input task">
+          <ul class="todo__list list" id="incompleteTasks">
+              <li class="list__item row">
+                <input class="row__checkbox" type="checkbox">
+                <label class="row__label task">Pay Bills</label>
+                <input type="text" class="row__input task">
                 <button class="button edit">Edit</button>
                 <button class="button delete">
                   <img src="./remove.svg" alt="Delete">
                 </button>
               </li>
-              <li class="todo__item editMode">
-                <input class="todo__checkbox" type="checkbox">
-                <label class="todo__label task">Go Shopping</label>
-                <input type="text" value="Go Shopping" class="todo__input task">
+              <li class="todo__item row editMode">
+                <input class="row__checkbox" type="checkbox">
+                <label class="row__label task">Go Shopping</label>
+                <input type="text" value="Go Shopping" class="row__input task">
                 <button class="button edit">Save</button>
                 <button class="button delete">
                   <img src="./remove.svg" alt="Delete">
@@ -48,11 +48,11 @@
 
         <section class="completed">
           <h3 class="completed__title">Completed</h3>
-          <ul class="completed__body" id="completed-tasks">
-            <li class="completed__item">
-              <input class="completed__checkbox" type="checkbox" checked>
-              <label class="completed__label task">See the Doctor</label>
-              <input type="text" class="completed__input task">
+          <ul class="completed__list list" id="completed-tasks">
+            <li class="list__item row">
+              <input class="row__checkbox" type="checkbox" checked>
+              <label class="row__label task">See the Doctor</label>
+              <input type="text" class="row__input task">
               <button class="button edit">Edit</button>
               <button class="button delete">
                 <img src="./remove.svg" alt="Delete">
