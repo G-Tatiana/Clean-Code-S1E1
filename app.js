@@ -8,40 +8,43 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var taskInput=document.querySelector('.add .row__input');//Add a new task.
+var addButton=document.querySelector('.add__button')[0];//first button
+var incompleteTaskHolder=document.querySelector('.todo .list');//ul of #incompleteTasks
+var completedTasksHolder=document.querySelector('.completed .list');//completed-tasks
 
 
 //New task list item
 var createNewTaskElement=function(taskString){
 
-  var listItem=document.createElement("li");
+  var listItem=document.createElement('li');
 
   //input (checkbox)
-  var checkBox=document.createElement("input");//checkbx
+  var checkBox=document.createElement('input');//checkbox
   //label
-  var label=document.createElement("label");//label
+  var label=document.createElement('label');//label
   //input (text)
-  var editInput=document.createElement("input");//text
+  var editInput=document.createElement('input');//text
   //button.edit
-  var editButton=document.createElement("button");//edit button
+  var editButton=document.createElement('button');//edit button
 
   //button.delete
-  var deleteButton=document.createElement("button");//delete button
-  var deleteButtonImg=document.createElement("img");//delete button image
+  var deleteButton=document.createElement('button');//delete button
+  var deleteButtonImg=document.createElement('img');//delete button image
+
+  listItem.classList.add('list__item', 'row');
 
   label.innerText=taskString;
-  label.className="task";
+  label.classList.add('row__label');
 
   //Each elements, needs appending
-  checkBox.type="checkbox";
-  editInput.type="text";
-  editInput.className="task";
+  checkBox.classList.add('row__checkbox');
+  checkBox.type='checkbox';
+  editInput.type='text';
+  editInput.classList.add('row__input');
 
-  editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className="edit";
+  editButton.innerText='Edit'; //innerText encodes special characters, HTML does not.
+  editButton.classList.add('button', '', '');
 
   deleteButton.className="delete";
   deleteButtonImg.src="./remove.svg";
