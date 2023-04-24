@@ -169,6 +169,6 @@ button.delete img:hover {
   width: 224px;
 }
 
-.todo__list .editMode label {
+.todo__list .editMode .todo__label {
   display: none;
 }
