@@ -81,7 +81,7 @@ li, h3 {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.row__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -94,7 +94,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.row__input:focus {
   color: #333;
 }
 
@@ -104,13 +104,12 @@ input[type="text"]:focus {
   margin: 0 0 20px;
 }
 
-.add__input {
+.add .row__input {
   width: 318px;
 }
 
 /* Task list */
-.todo__item,
-.completed__item {
+.list__item.row {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -120,26 +119,22 @@ input[type="text"]:focus {
   align-items: center;
 }
 
-.todo__item,
-.completed__item > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.todo__checkbox,
-.completed__checkbox {
+.row__checkbox {
   margin: 0 10px;
 }
 
-.todo__label,
-.completed__label {
+.row__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.todo__input,
-.completed__input {
+.row__input {
   width: 226px;
 }
 
@@ -154,21 +149,21 @@ button.delete img:hover {
 }
 
 /* Completed */
-.completed .completed__label {
+.completed .row__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.todo__list .todo__item .todo__input {
+.list__item .row__input {
   display: none;
 }
 
-.todo__list .editMode .todo__input {
+.editMode .row__input {
   display: inline-block;
   width: 224px;
 }
 
-.todo__list .editMode .todo__label {
+.editMode .row__label {
   display: none;
 }
