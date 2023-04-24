@@ -160,15 +160,15 @@ button.delete img:hover {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.todo__list .todo__item .todo__input {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+.todo__list .editMode .todo__input {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+.todo__list .editMode label {
   display: none;
 }
