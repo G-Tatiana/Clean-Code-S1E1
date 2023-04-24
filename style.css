@@ -31,7 +31,8 @@
   margin: 0 auto 0;
 }
 
-.task {
+.row__input,
+.row__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
