@@ -21,8 +21,11 @@
 }
 
 @media (max-width: 768px) {
-.header { text-align: center;
+
+.header {
+  text-align: center;
 }
+
 }
 
 .main {
@@ -51,7 +54,8 @@ li, h3 {
   list-style: none;
 }
 
-.task, .button {
+.task,
+.button {
   outline: none;
 }
 
